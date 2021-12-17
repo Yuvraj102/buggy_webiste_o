@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* styles for this file goes here */
+      .nike_logo {
+        width: 200px;
+      }
+      .red_underline {
+        border-bottom: 1px solid red !important;
+      }
+      .green_underline {
+        border-bottom: 1px solid green !important;
+      }
+    </style>
+
+    <title>Register</title>
+  </head>
+  <body>
+    <h2 class="brand_name" onclick="window.location.href='./Home.html'">
+      Nike Sports
+    </h2>
+    <div class="login_box">
+      <img src="./images/nike_logo.jpeg" alt="logo" class="nike_logo" />
+      <img
+        src="./images/placeholder.jpg"
+        style="
+          float: left;
+          border-radius: 75px;
+          width: 150px;
+          height: 150px;
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+        "
+        alt="logo"
+        class="nike_logo"
+      />
+      <form action="">
+        <input type="email" required placeholder="enter your email" />
+        <input
+          type="password"
+          id="pass"
+          required
+          placeholder="enter your password"
+        />
+        <div>
+          <label>@</label> <input type="text" required placeholder="username" />
+        </div>
+        <div><input type="checkbox" /> <label>Remember me</label></div>
+        <a href="./Register.html">No registered yet ?</a>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <script src="./javascript/auth.js"></script>
+  </body>
+</html>

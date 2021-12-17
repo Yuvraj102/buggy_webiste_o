@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      /* styles for this file goes here */
+      .red_underline {
+        border-bottom: 1px solid red !important;
+      }
+      .green_underline {
+        border-bottom: 1px solid green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="brand_name" onclick="window.location.href='./Home.html'">
+      Nike Sports
+    </h2>
+    <!-- main -->
+    <div class="login_box">
+      <img src="./images/nike_logo.jpeg" alt="logo" class="nike_logo" />
+      <form action="">
+        <input type="email" required placeholder="enter your email" />
+        <input
+          type="password"
+          id="pass"
+          required
+          placeholder="enter your password"
+        />
+        <div><input type="checkbox" /> <label>Remember me</label></div>
+        <a href="./Register.html">No registered yet ?</a>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script src="./javascript/auth.js"></script>
+  </body>
+</html>
